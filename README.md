@@ -1,7 +1,9 @@
 # 🔐 Azure & M365 Admin Scripts
 
-> **Production-grade PowerShell & Python automation for Microsoft 365, Entra ID, Intune, and SharePoint.**  
-> Built from real-world IT administration experience managing enterprise environments.
+> **PowerShell & Python automation for Microsoft 365, Entra ID, Intune, SharePoint and Exchange Online.**  
+> Scripts for the admin tasks I handled day to day: provisioning, compliance, licences and permissions.
+
+> 🧪 **Reference / lab project.** Original practice code written to demonstrate the approach. It is not taken from an employer's codebase. Review and adapt before using it in your own environment.
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
@@ -128,7 +130,7 @@ MIT — Free to use and adapt. Attribution appreciated.
 
 ## 👤 Author
 
-**Manicharan Ravi** — IT Specialist | Cloud Security Engineer  
+**Manicharan Ravi** — IT Specialist & Cloud Engineer  
 📍 Mainz, Germany  
 🔗 [LinkedIn](https://linkedin.com/in/manicharan-ravi)  
 ☁️ Azure · AWS · GCP · M365 · Intune · Entra ID
