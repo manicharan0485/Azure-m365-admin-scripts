@@ -1,0 +1,5 @@
+DisplayName,UserPrincipalName,Department,JobTitle,Manager,LicenseSku
+Anna Mueller,a.mueller@contoso.de,Finance,Financial Analyst,m.schmidt@contoso.de,BUSINESS_PREMIUM
+Jonas Weber,j.weber@contoso.de,IT,Helpdesk Technician,it.lead@contoso.de,ENTERPRISEPACK
+Laura Schneider,l.schneider@contoso.de,HR,HR Coordinator,hr.manager@contoso.de,BUSINESS_STANDARD
+Tobias Bauer,t.bauer@contoso.de,Sales,Account Executive,sales.head@contoso.de,ENTERPRISEPACK

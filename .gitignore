@@ -1,0 +1,38 @@
+# Secrets & credentials - NEVER commit these
+*.env
+.env.*
+secrets.json
+credentials.json
+client_secret.txt
+*_secret*
+
+# Report outputs
+*.html
+*_report_*.csv
+*_audit_*.csv
+*_log_*.csv
+
+# PowerShell
+*.ps1xml
+PSScriptAnalyzerSettings.psd1
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
