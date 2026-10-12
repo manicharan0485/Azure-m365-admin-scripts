@@ -132,5 +132,5 @@ MIT — Free to use and adapt. Attribution appreciated.
 
 **Manicharan Ravi** — IT Specialist & Cloud Engineer  
 📍 Mainz, Germany  
-🔗 [LinkedIn](https://linkedin.com/in/manicharan-ravi)  
+🔗 [Portfolio](https://manicharan0485.github.io) · [LinkedIn](https://linkedin.com/in/manicharan-ravi)  
 ☁️ Azure · AWS · GCP · M365 · Intune · Entra ID
