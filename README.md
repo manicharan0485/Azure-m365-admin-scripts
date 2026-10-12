@@ -25,9 +25,10 @@ azure-m365-admin-scripts/
 │
 ├── python/
 │   ├── reporting/          # Automated HTML/CSV reports via Graph API
-│   └── automation/         # Bulk operations & scheduled tasks
+│   └── requirements.txt
 │
-└── docs/                   # Architecture diagrams & setup guides
+└── docs/
+    └── SETUP.md            # App registration, permissions & setup
 ```
 
 ---
@@ -39,36 +40,32 @@ azure-m365-admin-scripts/
 |--------|-------------|
 | `Bulk-UserProvisioning.ps1` | Create/update users from CSV with license assignment |
 | `Device-ComplianceAudit.ps1` | Detect & remediate disabled/non-compliant devices (Error 135011 fix) |
-| `StaleAccount-Cleanup.ps1` | Find and disable accounts inactive for 90+ days |
 | `MFA-StatusReport.ps1` | Export MFA enrollment status for all users |
 
 ### Intune
 | Script | Description |
 |--------|-------------|
 | `DeviceCompliance-Report.ps1` | Full compliance report across all managed devices |
-| `AppDeployment-Status.ps1` | Check app installation status across device fleet |
-| `Autopilot-Enrollment.ps1` | Register devices to Windows Autopilot via CSV |
 
 ### M365 Licensing
 | Script | Description |
 |--------|-------------|
 | `License-AuditReport.ps1` | Full license inventory with cost estimation |
-| `UnusedLicense-Reclaim.ps1` | Identify and reclaim licenses from inactive users |
-| `License-BulkAssign.ps1` | Bulk assign/remove licenses from CSV |
 
 ### SharePoint
 | Script | Description |
 |--------|-------------|
-| `Permission-Audit.ps1` | Full permissions report for all sites/libraries |
 | `BrokenInheritance-Fix.ps1` | Detect and fix broken permission inheritance |
-| `ExternalSharing-Report.ps1` | Report on externally shared files and sites |
+
+### Python reporting
+| Script | Description |
+|--------|-------------|
+| `m365_compliance_report.py` | Compliance report via Microsoft Graph API |
 
 ### Exchange Online
 | Script | Description |
 |--------|-------------|
 | `MailFlow-Connector.ps1` | Configure hybrid mail connectors (e.g., Strato + M365 dual routing) |
-| `Mailbox-Audit.ps1` | Export mailbox permissions and delegates |
-| `AntiSpam-PolicyReport.ps1` | Export spam filter and safe sender configurations |
 
 ---
 
@@ -118,7 +115,7 @@ Connect-SPOService -Url "https://yourtenant-admin.sharepoint.com"
 All scripts support `-WhatIf` and `-Verbose` flags:
 
 ```powershell
-.\Bulk-UserProvisioning.ps1 -CsvPath ".\users.csv" -WhatIf -Verbose
+.\Bulk-UserProvisioning.ps1 -CsvPath ".\sample_users.csv" -WhatIf -Verbose
 ```
 
 ---
